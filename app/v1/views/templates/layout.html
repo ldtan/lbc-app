@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %}{% endblock title %} | La Loma Baptist Church</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/default.css') }}" />
+        <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/layout.css') }}" />
+        
+        {% block style %}{% endblock style %}
+    </head>
+    <body>
+        <div id='main-container'>
+            <header id="main-header-container">
+                <div id='site-logo'>
+                    <img id="icon" />
+                    <div id="text">
+                        <h1 id="title">La Loma Baptist Church</h1>
+                        <h6 id="subtitle">The Church that Preaches what the Bible Teaches</h6>
+                    </div>
+                </div>
+                <nav id="header-navigation">
+                    <div class="dropdown">
+                        <p id="title">ABOUT US</p>
+                        <div id="content">
+                            <a href="#">Item 1</a>
+                            <a href="#">Item 2</a>
+                            <a href="#">Item 3</a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div id="main-body-container">
+                {% block body %}{% endblock body %}
+            </div>
+            <footer id="main-footer-container">
+
+            </footer>
+        </div>
+        <!-- <script src="main.js"></script> -->
+        {% block script %}{% endblock script %}
+    </body>
+</html>
