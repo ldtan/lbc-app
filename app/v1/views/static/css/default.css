@@ -1,10 +1,12 @@
 * {
     background: transparent;
     border: none;
+    color: #000000;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     outline: none;
     padding: 0;
     text-decoration: none;
     vertical-align: baseline;
+    /* border: 1px solid #000000; */
 }

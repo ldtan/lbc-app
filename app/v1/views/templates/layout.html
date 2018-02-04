@@ -13,29 +13,109 @@
     <body>
         <div id='main-container'>
             <header id="main-header-container">
-                <div id='site-logo'>
-                    <img id="icon" />
-                    <div id="text">
-                        <h1 id="title">La Loma Baptist Church</h1>
-                        <h6 id="subtitle">The Church that Preaches what the Bible Teaches</h6>
-                    </div>
-                </div>
-                <nav id="header-navigation">
-                    <div class="dropdown">
-                        <p id="title">ABOUT US</p>
-                        <div id="content">
-                            <a href="#">Item 1</a>
-                            <a href="#">Item 2</a>
-                            <a href="#">Item 3</a>
+                <header id="header-container">
+                    <a id='site-logo' href="#">
+                        <img id="icon" />
+                        <div id="text">
+                            <h1 id="title">La Loma Baptist Church</h1>
+                            <h6 id="subtitle">The Church that Preaches what the Bible Teaches</h6>
                         </div>
-                    </div>
-                </nav>
+                        <div class="clear-float"></div>
+                    </a>
+                    <nav id="header-navigation">
+                        <div id="current" class="navigation-item">
+                            <a id="title" href="#">HOME</a>
+                        </div>
+                        <div class="dropdown navigation-item">
+                            <a id="title" href="#">ABOUT US</a>
+                            <div id="content">
+                                <a href="#">Pastor's Corner</a>
+                                <a href="#">Our History</a>
+                                <a href="#">Faith Promise Mission</a>
+                                <a href="#">World Missions</a>
+                                <a href="#">Faith Promise Mission</a>
+                                <a href="#">Building Project</a>
+                                <a href="#">Services</a>
+                                <a href="#">Contact Us</a>
+                            </div>
+                        </div>
+                        <div class="dropdown navigation-item">
+                            <a id="title" href="#">MINISTRIES</a>
+                            <div id="content">
+                                <a href="#">Soul Winning</a>
+                                <a href="#">Bible Studies</a>
+                                <a href="#">Singles' Fellowship</a>
+                                <a href="#">Children's Church</a>
+                                <a href="#">Youth Fellowship</a>
+                                <a href="#">AWANA Club</a>
+                                <a href="#">Sacred Music</a>
+                                <a href="#">U-Light Student Hub</a>
+                                <a href="#">Outreach Ministry</a>
+                                <a href="#">Prison Ministry</a>
+                                <a href="#">Outside School Ministry</a>
+                                <a href="#">Medical Missions</a>
+                                <a href="#">PIWD (Deaf & Blind)</a>
+                                <a href="#">DUNAMIS</a>
+                                <a href="#">Ushers & Greeters</a>
+                            </div>
+                        </div>
+                        <div class="dropdown navigation-item">
+                            <a id="title" href="#">EDUCATION</a>
+                            <div id="content">
+                                <a href="#">La Loma Bible College & Institute</a>
+                                <a href="#">La Loma Baptist Christian Academy</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="clear-float"></div>
+                </header>
             </header>
             <div id="main-body-container">
                 {% block body %}{% endblock body %}
             </div>
             <footer id="main-footer-container">
-
+                <div id="social-sites">
+                    <a id="facebook" class="icon" href="#"></a>
+                    <a id="twitter" class="icon" href="#"></a>
+                    <a id="youtube" class="icon" href="#"></a>
+                    <a id="instagram" class="icon" href="#"></a>
+                </div>
+                <div id="footer-navigation">
+                    <div class="navigation-item">
+                        <a id="title" href="#">ABOUT US</a>
+                        <div id="content">
+                            <a href="#">PASTOR'S CORNER</a>
+                            <a href="#">OUR HISTORY</a>
+                            <a href="#">FAITH PROMISE MISSIONS</a>
+                            <a href="#">WORLD MISSIONS</a>
+                            <a href="#">BUILDING PROJECT</a>
+                            <a href="#">OUR SERVICES</a>
+                            <a href="#">CONTACT US</a>
+                        </div>
+                    </div>
+                    <div class="navigation-item">
+                        <a id="title" href="#">MINISTRIES</a>
+                        <div id="content">
+                            <a href="#">CHILDREN</a>
+                            <a href="#">TEENS</a>
+                            <a href="#">COLLEGE</a>
+                            <a href="#">ADULTS</a>
+                            <a href="#">MARRIED</a>
+                            <a href="#">COLLEGE</a>
+                            <a href="#">YOUNG ONES</a>
+                            <a href="#">HOPE</a>
+                            <a href="#">PIWD (DEAF & BLIND)</a>
+                        </div>
+                    </div>
+                    <div class="navigation-item">
+                        <a id="title" href="#">EDUCATION</a>
+                        <div id="content">
+                            <a href="#">LA LOMA BIBLE COLLEGE & INSTITUTE</a>
+                            <a href="#">LA LOMA BAPTIST CHRISTIAN ACADEMY</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="copyright">&copy 2018 by LBC Creative Team</div>
             </footer>
         </div>
         <!-- <script src="main.js"></script> -->

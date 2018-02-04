@@ -1,5 +1,4 @@
 # [START Imports]
-from app.v1.utils.cache import nocache
 from flask import Blueprint, render_template
 # [END Imports]
 
