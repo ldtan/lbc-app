@@ -4,14 +4,91 @@
     <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/home.css') }}" />
 {% endblock style %}
 {% block body %}
-    <section id="main-invitation-container">
-        <div id="invitation-container">
+    <section id="invitation-container-level-1">
+        <div id="invitation-container-level-2">
             <h1 id="invitation">Your second home...</h1>
             <button id="visit-us">VISIT US | HEAR INSPIRING MESSAGE</button>
             <button id="contact-us">Contact Us</button>
         </div>
     </section>
-    <section id="main-upcoming-events-container">
-        <div id="upcoming-events-container"></div>
+    <section id="upcoming-events-container-level-1">
+        <div id="upcoming-events-container-level-2">
+            <div id="upcoming-events-container-level-3">
+                <div id="events-text">
+                    <h1 id="title">UPCOMING EVENTS & UPDATES</h1>
+                    <div id="content">
+                        <a class="event-item" href="#">
+                            <h2 id="event-title">Event Title</h2>
+                            <h3 id="event-date">[Month] [Year]</h3>
+                        </a>
+                        <a class="event-item" href="#">
+                            <h2 id="event-title">Event Title</h2>
+                            <h3 id="event-date">[Month] [Year]</h3>
+                        </a>
+                        <a class="event-item" href="#">
+                            <h2 id="event-title">Event Title</h2>
+                            <h3 id="event-date">[Month] [Year]</h3>
+                        </a>
+                        <a class="event-item" href="#">
+                            <h2 id="event-title">Event Title</h2>
+                            <h3 id="event-date">[Month] [Year]</h3>
+                        </a>
+                    </div>
+                </div>
+                <div id="events-slider"></div>
+            </div>
+        </div>
+    </section>
+    <section id="pastor-corner-container-level-1">
+        <div id="pastor-corner-container-level-2">
+            <h1 id="title">PASTOR'S CORNER</h1>
+            <p id="description">Homegrown preacher of La Loma Baptist Church and became a Senior Pastor since 2006. Graduate of Bible School and once a missionary to the province of Pangasinan.</p>
+            <a id="read-more" class="button" href="#">Read More</a>
+        </div>
+    </section>
+    <section id="ministries-container-level-1">
+        <div id="ministries-container-level-2">
+            <div id="ministries-container-level-3">
+                <h1 id="title">A ROOM FOR EVERYONE...</h1>
+                <div id="content">
+                    {% for i in range(9) %}
+                        <a class="ministry-item" href="#">
+                            <img />
+                            <label>Ministry</label>
+                        </a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="regular-events-slider">
+        <div id="regular-events-navigation">
+            <h1 id="title">Regular Events...</h1>
+            <nav id="content">
+                <a class="navigation-item" href="#">•</a>
+                <a class="navigation-item" href="#">•</a>
+                <a class="navigation-item" href="#">•</a>
+                <a class="navigation-item" href="#">•</a>
+                <a class="navigation-item" href="#">•</a>
+            </nav>
+        </div>
+    </section>
+    <section id="members-container-level-1">
+        <div id="members-container-level-2">
+            <div id="members-container-level-3">
+                <h1 id="title">THE PASTOR'S TEAM</h1>
+                <div id="content">
+                    {% for i in range(9) %}
+                        <a class="member-item" href="#">
+                            <img />
+                            <label>
+                                <h2 id="name">Name</h2>
+                                <h3 id="position">Position</h3>
+                            </label>
+                        </a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
     </section>
 {% endblock body %}

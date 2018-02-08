@@ -1,11 +1,11 @@
-#main-invitation-container {
+#invitation-container-level-1 {
     background: #d3d3d3;
-    height: calc(100vh - 109px);
+    min-height: calc(100vh - 109px);
     position: relative;
     width: 100%;
 }
 
-#main-invitation-container #invitation-container {
+#invitation-container-level-1 #invitation-container-level-2 {
     bottom: 10vh;
     margin: 0 auto;
     position: absolute;
@@ -14,19 +14,19 @@
     right: 0;
 }
 
-#main-invitation-container #invitation-container #invitation, #visit-us, #contact-us {
+#invitation-container-level-1 #invitation-container-level-2 #invitation, #visit-us, #contact-us {
     display: block;
     margin: 20px auto;
 }
 
-#main-invitation-container #invitation-container #invitation {
+#invitation-container-level-1 #invitation-container-level-2 #invitation {
     color: #ffffff;
     font-size: 57px;
     position: relative;
     text-shadow: rgba(0, 0, 0, 0.4) 0px 4px 5px;
 }
 
-#main-invitation-container #invitation-container #visit-us {
+#invitation-container-level-1 #invitation-container-level-2 #visit-us {
     border: 3px solid #DEDEDE;
     color: #DEDEDE;
     font-size: 15px;
@@ -34,13 +34,13 @@
     position: relative;
 }
 
-#main-invitation-container #invitation-container #visit-us:hover {
+#invitation-container-level-1 #invitation-container-level-2 #visit-us:hover {
     background: #ffffff;
     border: 3px solid #ffffff;
     color: #000000;
 }
 
-#main-invitation-container #invitation-container #contact-us {
+#invitation-container-level-1 #invitation-container-level-2 #contact-us {
     background: rgba(1, 177, 175, 1);
     border: solid rgba(0, 108, 109, 1) 0px;
     box-shadow: 4px 1px 6px 0px rgba(0,0,0,0.2);
@@ -50,24 +50,328 @@
     position: relative;
 }
 
-#main-invitation-container #invitation-container #contact-us:hover {
+#invitation-container-level-1 #invitation-container-level-2 #contact-us:hover {
     background: rgb(1, 143, 140);
 }
 
-#main-upcoming-events-container {
+#upcoming-events-container-level-1 {
+    position: relative;
+    width: 100%;
+}
+
+#upcoming-events-container-level-2 {
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    margin: 15vh auto;
+    min-height: 70vh;
+    position: relative;
+    max-width: fit-content;
+}
+
+#upcoming-events-container-level-3 {
+    text-align: center;
+}
+
+#events-text, #events-slider {
+    display: inline-table;
+    margin: 20px 40px;
+    position: relative;
+    vertical-align: top;
+}
+
+#events-text {
+    text-align: left;
+    width: 300px;
+}
+
+#events-text #title {
+    color: #535252;
+    font-size: 26px;
+    letter-spacing: 0.1em;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+#events-text #content {
+    height: 200px;
+    margin: 15px 0;
+    overflow-y: scroll;
+}
+
+#events-text #content .event-item {
+    padding: 7px 0;
+    display: block;
+}
+
+#events-text #content .event-item:hover {
+    background: #535252;
+}
+
+#events-text #content .event-item:hover #event-title {
+    color: #ffffff;
+}
+
+#events-text #content .event-item:hover #event-date {
+    color: #ffffff;
+}
+
+#events-text #content .event-item #event-title {
+    color: #535252;
+    font-size: 18px;
+    font-weight: bold;
+    word-wrap: break-word;
+}
+
+#events-text #content .event-item #event-date {
+    color: #535252;
+    font-size: 14px;
+    font-weight: normal;
+    word-wrap: break-word;
+}
+
+#events-slider {
+    background: rgba(47, 46, 46, 1);
+    height: 345px;
+    position: relative;
+    width: 505px;
+}
+
+#pastor-corner-container-level-1 {
+    background: #d3d3d3;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+#pastor-corner-container-level-2 {
+    height: fit-content;
+    margin-left: 5%;
+    position: relative;
+    width: 450px;
+}
+
+#pastor-corner-container-level-2 #title, #description, #read-more {
+    margin: 10px;
+}
+
+#pastor-corner-container-level-2 #title {
+    color: #535252;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    word-wrap: break-word;
+}
+
+#pastor-corner-container-level-2 #description {
+    color: #535252;
+    font-size: 14px;
+    word-wrap: break-word;
+}
+
+#pastor-corner-container-level-2 #read-more {
+    background: rgba(1, 177, 175, 1);
+    border: solid rgba(0, 108, 109, 1) 0px;
+    box-shadow: 4px 1px 6px 0px rgba(0,0,0,0.2);
+    color: #ffffff;
+    font-size: 15px;
+    padding: 10px 20px;
+    position: relative;
+}
+
+#pastor-corner-container-level-2 #read-more:hover {
+    background: rgb(1, 143, 140);
+}
+
+#ministries-container-level-1 {
+    position: relative;
+    width: 100%;
+}
+
+#ministries-container-level-2 {
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    margin: 15vh auto;
+    min-height: 70vh;
+    position: relative;
+    max-width: fit-content;
+}
+
+#ministries-container-level-3 #title {
+    color: #535252;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    margin: 20px;
+    text-align: center;
+}
+
+#ministries-container-level-3 #content {
+    height: fit-content;
+    margin: 20px;
+    max-width: 585px;
+    min-width: 190px;
+    position: relative;
+    text-align: center;
+}
+
+#ministries-container-level-3 #content .ministry-item {
+    display: inline-table;
+    height: 177px;
+    margin: 5px;
+    position: relative;
+    text-align: center;
+    width: 179px;
+}
+
+#ministries-container-level-3 #content .ministry-item img {
+    display: block;
+    height: 125px;
+    object-fit: cover;
+    position: relative;
+    width: 179px;
+}
+
+#ministries-container-level-3 #content .ministry-item:hover img {
+    filter: opacity(0.5);
+}
+
+#ministries-container-level-3 #content .ministry-item label {
+    background: rgba(47, 46, 46, 1);
+    color: #ffffff;
+    display: block;
+    font-size: 16px;
+    line-height: 1.4em;
+    overflow: hidden;
+    padding: 10px 0;
+    text-overflow: ellipsis;
+}
+
+#regular-events-slider {
+    background: #d3d3d3;
     height: 100vh;
     position: relative;
     width: 100%;
 }
 
-#upcoming-events-container {
+#regular-events-navigation {
+    bottom: 10vh;
+    display: block;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: fit-content;
+}
+
+#regular-events-navigation #title {
+    color: #ffffff;
+    font-size: 57px;
+    text-shadow: rgba(0, 0, 0, 0.4) 0px 4px 5px;
+    word-wrap: break-word;
+}
+
+#regular-events-navigation #content a {
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 57px;
+    text-shadow: rgba(255, 255, 255, 0.6);
+    word-wrap: break-word;
+}
+
+
+#members-container-level-1 {
+    position: relative;
+    width: 100%;
+}
+
+#members-container-level-2 {
+    align-items: center;
     background: #ffffff;
     border: 1px solid #cccccc;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    height: 60vh;
-    left: 0;
-    margin: 20vh auto;
-    position: absolute;
-    right: 0;
-    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 15vh auto;
+    min-height: 70vh;
+    position: relative;
+    max-width: fit-content;
+}
+
+#members-container-level-3 #title {
+    color: #535252;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    margin: 20px;
+    text-align: center;
+}
+
+#members-container-level-3 #content {
+    height: fit-content;
+    margin: 20px;
+    max-width: 585px;
+    min-width: 190px;
+    position: relative;
+    text-align: center;
+}
+
+#members-container-level-3 #content .member-item {
+    display: inline-table;
+    height: 210px;
+    margin: 5px;
+    position: relative;
+    text-align: center;
+}
+
+#members-container-level-3 #content .member-item img {
+    background: rgba(204, 204, 204, 0.19);
+    display: block;
+    height: 142px;
+    object-fit: cover;
+    padding: 10px;
+    position: relative;
+    width: 142px;
+}
+
+#members-container-level-3 #content .member-item:hover img {
+    filter: opacity(0.5);
+    position: relative;
+}
+
+#members-container-level-3 #content .member-item label {
+    display: block;
+    margin: 5px 0;
+    position: relative;
+    width: 160px;
+}
+
+#members-container-level-3 #content .member-item label #name {
+    color: #000000;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.4em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#members-container-level-3 #content .member-item label #position {
+    color: #000000;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 1.4em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
