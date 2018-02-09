@@ -13,6 +13,7 @@
     <body>
         <div id='main-container'>
             <header id="main-header-container">
+                <div class="translucent-filter"></div>
                 <header id="header-container">
                     <a id='site-logo' href="#">
                         <img id="icon" />
@@ -23,23 +24,22 @@
                         <div class="clear-float"></div>
                     </a>
                     <nav id="header-navigation">
-                        <div id="current" class="navigation-item">
+                        <div class="navigation-item {% block home_navigation %}{% endblock home_navigation %}">
                             <a id="title" href="#">HOME</a>
                         </div>
-                        <div class="dropdown navigation-item">
+                        <div class="dropdown navigation-item {% block about_us_navigation %}{% endblock about_us_navigation %}">
                             <a id="title" href="#">ABOUT US</a>
                             <div id="content">
                                 <a href="#">Pastor's Corner</a>
                                 <a href="#">Our History</a>
                                 <a href="#">Faith Promise Mission</a>
                                 <a href="#">World Missions</a>
-                                <a href="#">Faith Promise Mission</a>
                                 <a href="#">Building Project</a>
                                 <a href="#">Services</a>
                                 <a href="#">Contact Us</a>
                             </div>
                         </div>
-                        <div class="dropdown navigation-item">
+                        <div class="dropdown navigation-item {% block ministries_navigation %}{% endblock ministries_navigation %}">
                             <a id="title" href="#">MINISTRIES</a>
                             <div id="content">
                                 <a href="#">Soul Winning</a>
@@ -59,7 +59,7 @@
                                 <a href="#">Ushers & Greeters</a>
                             </div>
                         </div>
-                        <div class="dropdown navigation-item">
+                        <div class="dropdown navigation-item {% block education_navigation %}{% endblock education_navigation %}">
                             <a id="title" href="#">EDUCATION</a>
                             <div id="content">
                                 <a href="#">La Loma Bible College & Institute</a>
@@ -75,10 +75,10 @@
             </div>
             <footer id="main-footer-container">
                 <div id="social-sites">
-                    <a id="facebook" class="icon" href="#"></a>
-                    <a id="twitter" class="icon" href="#"></a>
-                    <a id="youtube" class="icon" href="#"></a>
-                    <a id="instagram" class="icon" href="#"></a>
+                    <a id="facebook" class="icon" href="#"><img src="{{ url_for('static', filename='img/facebook_icon.png') }}" /></a>
+                    <a id="twitter" class="icon" href="#"><img src="{{ url_for('static', filename='img/twitter_icon.png') }}" /></a>
+                    <a id="youtube" class="icon" href="#"><img src="{{ url_for('static', filename='img/youtube_icon.png') }}" /></a>
+                    <a id="instagram" class="icon" href="#"><img src="{{ url_for('static', filename='img/instagram_icon.png') }}" /></a>
                 </div>
                 <div id="footer-navigation">
                     <div class="navigation-item">

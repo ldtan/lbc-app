@@ -78,11 +78,11 @@
     color: #8B0000;
 }
 
-#header-navigation #current #title {
+#header-navigation .current #title {
     color: #3588CC;
 }
 
-#header-navigation #current #title:hover {
+#header-navigation .current #title:hover {
     color: #3588CC;
 }
 
@@ -95,40 +95,24 @@
 
 #social-sites {
     margin: 0 auto;
-    padding: 20px 0 10px 0;
+    padding: 10px;
     position: relative;
     width: fit-content;
 }
 
 #social-sites .icon {
     display: inline-block;
+    margin: 10px;
+}
+
+#social-sites .icon img {
     height: 38px;
-    margin: 0 10px;
+    object-fit: cover;
     width: 38px;
 }
 
-#social-sites #facebook.icon {
-    background: url("../img/facebook_icon.png");
-    background-size: contain;
-}
-
-#social-sites #twitter.icon {
-    background: url("../img/twitter_icon.png");
-    background-size: contain;
-}
-
-#social-sites #youtube.icon {
-    background: url("../img/youtube_icon.png");
-    background-size: contain;
-}
-
-#social-sites #instagram.icon {
-    background: url("../img/instagram_icon.png");
-    background-size: contain;
-}
-
 #footer-navigation {
-    margin: 20px auto;
+    margin: 10px auto;
     position: relative;
     width: fit-content;
 }

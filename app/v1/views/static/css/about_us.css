@@ -1,0 +1,58 @@
+#about-us-container-level-1 {
+    position: relative;
+    width: 100%;
+}
+
+#about-us-container-level-2 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 15vh auto;
+    max-width: fit-content;
+    min-height: 70vh;
+    position: relative;
+}
+
+#about-us-container-level-3 #title {
+    color: #535252;
+    font-size: 26px;
+    line-height: 1.4em;
+    margin: 20px;
+    word-wrap: break-word;
+}
+
+#about-us-container-level-3 #content {
+    height: fit-content;
+    max-width: 977px;
+    min-width: 268px;
+    position: relative;
+    text-align: center;
+}
+
+#about-us-container-level-3 #content #text, img {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#about-us-container-level-3 #content #text {
+    text-align: left;
+    width: 485px;
+}
+
+#about-us-container-level-3 #content #text p {
+    color: #535252;
+    font-size: 13px;
+    line-height: 1.4em;
+    margin: 20px;
+}
+
+#about-us-container-level-3 #content img {
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 3px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(255, 255, 255, 1);
+    height: 356px;
+    margin: 20px;
+    overflow: hidden;
+    width: 268px;
+}

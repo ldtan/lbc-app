@@ -1,3 +1,36 @@
+/* @keyframes animation-001 {
+    0% { background: rgba(1, 177, 175, 1); }
+    100% { background: rgb(1, 143, 140); }
+}
+
+@keyframes animation-002 {
+    0% {
+        background: transparent;
+        border: 3px solid #DEDEDE;
+        color: #DEDEDE;
+    }
+    100% {
+        background: #ffffff;
+        border: 3px solid #ffffff;
+        color: #000000;
+    }
+}
+
+@keyframes animation-003 {
+    0% { background: transparent; }
+    100% { background: #535252; }
+}
+
+@keyframes animation-004 {
+    0% { color: #535252; }
+    100% { color: #ffffff; }
+}
+
+@keyframes animation-005 {
+    0% { filter: none; }
+    100% { filter: opacity(0.5); }
+}
+ */
 #invitation-container-level-1 {
     background: #d3d3d3;
     min-height: calc(100vh - 109px);
@@ -32,12 +65,14 @@
     font-size: 15px;
     padding: 10px;
     position: relative;
+    transition: .2s ease-out;
 }
 
 #invitation-container-level-1 #invitation-container-level-2 #visit-us:hover {
     background: #ffffff;
     border: 3px solid #ffffff;
     color: #000000;
+    transition: .2s ease-in;
 }
 
 #invitation-container-level-1 #invitation-container-level-2 #contact-us {
@@ -48,10 +83,12 @@
     font-size: 15px;
     padding: 10px 20px;
     position: relative;
+    transition: .2s ease-out;
 }
 
 #invitation-container-level-1 #invitation-container-level-2 #contact-us:hover {
     background: rgb(1, 143, 140);
+    transition: .2s ease-in;
 }
 
 #upcoming-events-container-level-1 {
@@ -103,19 +140,23 @@
 }
 
 #events-text #content .event-item {
-    padding: 7px 0;
     display: block;
+    padding: 7px 0;
+    transition: .2s ease-out;    
 }
 
 #events-text #content .event-item:hover {
     background: #535252;
+    transition: .2s ease-in;
 }
 
 #events-text #content .event-item:hover #event-title {
+    transition: .2s ease-out;
     color: #ffffff;
 }
 
 #events-text #content .event-item:hover #event-date {
+    transition: .2s ease-in;
     color: #ffffff;
 }
 
@@ -181,10 +222,12 @@
     font-size: 15px;
     padding: 10px 20px;
     position: relative;
+    transition: .2s ease-out;    
 }
 
 #pastor-corner-container-level-2 #read-more:hover {
     background: rgb(1, 143, 140);
+    transition: .2s ease-in;
 }
 
 #ministries-container-level-1 {
@@ -200,9 +243,10 @@
     display: flex;
     justify-content: center;
     margin: 15vh auto;
-    min-height: 70vh;
-    position: relative;
     max-width: fit-content;
+    min-height: 70vh;
+    padding: 0 75px;
+    position: relative;
 }
 
 #ministries-container-level-3 #title {
@@ -217,7 +261,7 @@
 #ministries-container-level-3 #content {
     height: fit-content;
     margin: 20px;
-    max-width: 585px;
+    max-width: 577px;
     min-width: 190px;
     position: relative;
     text-align: center;
@@ -237,14 +281,16 @@
     height: 125px;
     object-fit: cover;
     position: relative;
+    transition: .2s ease-out;
     width: 179px;
 }
 
 #ministries-container-level-3 #content .ministry-item:hover img {
     filter: opacity(0.5);
+    transition: .2s ease-in;
 }
 
-#ministries-container-level-3 #content .ministry-item label {
+#ministries-container-level-3 #content .ministry-item #label {
     background: rgba(47, 46, 46, 1);
     color: #ffffff;
     display: block;
@@ -303,6 +349,7 @@
     justify-content: center;
     margin: 15vh auto;
     min-height: 70vh;
+    padding: 0 75px;
     position: relative;
     max-width: fit-content;
 }
@@ -319,7 +366,7 @@
 #members-container-level-3 #content {
     height: fit-content;
     margin: 20px;
-    max-width: 585px;
+    max-width: 525px;
     min-width: 190px;
     position: relative;
     text-align: center;
@@ -340,22 +387,25 @@
     object-fit: cover;
     padding: 10px;
     position: relative;
+    transition: .2s ease-out;
     width: 142px;
 }
 
 #members-container-level-3 #content .member-item:hover img {
     filter: opacity(0.5);
     position: relative;
+    transition: .2s ease-in;
 }
 
-#members-container-level-3 #content .member-item label {
+#members-container-level-3 #content .member-item #label {
     display: block;
     margin: 5px 0;
     position: relative;
     width: 160px;
+    user-select: all;
 }
 
-#members-container-level-3 #content .member-item label #name {
+#members-container-level-3 #content .member-item #label #name {
     color: #000000;
     font-size: 16px;
     font-weight: normal;
@@ -365,7 +415,7 @@
     white-space: nowrap;
 }
 
-#members-container-level-3 #content .member-item label #position {
+#members-container-level-3 #content .member-item #label #position {
     color: #000000;
     font-size: 14px;
     font-style: italic;
