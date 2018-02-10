@@ -25,18 +25,18 @@
                     </a>
                     <nav id="header-navigation">
                         <div class="navigation-item {% block home_navigation %}{% endblock home_navigation %}">
-                            <a id="title" href="#">HOME</a>
+                            <a id="title" href="{{ url_for('home.read') }}">HOME</a>
                         </div>
                         <div class="dropdown navigation-item {% block about_us_navigation %}{% endblock about_us_navigation %}">
-                            <a id="title" href="#">ABOUT US</a>
+                            <a id="title" href="{{ url_for('about_us.read', page='about_us') }}">ABOUT US</a>
                             <div id="content">
-                                <a href="#">Pastor's Corner</a>
-                                <a href="#">Our History</a>
-                                <a href="#">Faith Promise Mission</a>
-                                <a href="#">World Missions</a>
-                                <a href="#">Building Project</a>
-                                <a href="#">Services</a>
-                                <a href="#">Contact Us</a>
+                                <a href="{{ url_for('about_us.read', page='pastors_corner') }}">Pastor's Corner</a>
+                                <a href="{{ url_for('about_us.read', page='our_history') }}">Our History</a>
+                                <a href="{{ url_for('about_us.read', page='faith_promise_mission') }}">Faith Promise Mission</a>
+                                <a href="{{ url_for('about_us.read', page='world_missions') }}">World Missions</a>
+                                <a href="{{ url_for('about_us.read', page='building_project') }}">Building Project</a>
+                                <a href="{{ url_for('about_us.read', page='services') }}">Services</a>
+                                <a href="{{ url_for('about_us.read', page='contact_us') }}">Contact Us</a>
                             </div>
                         </div>
                         <div class="dropdown navigation-item {% block ministries_navigation %}{% endblock ministries_navigation %}">

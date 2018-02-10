@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block title %}Error{% endblock title %}
+{% block style %}
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/error.css') }}" />
+{% endblock style %}
+{% block about_us_navigation %}current{% endblock about_us_navigation %}
+{% block body %}
+    <section id="error-container-level-1">
+        <div id="error-container-level-2">
+            <div id="error-container-level-3">
+                <h1 id="title">Error {{ error.code }}</h1>
+                <p id="content">{{ error.description }}</p>
+                <a id="return-home" href="{{ url_for('home.read') }}">Return to home page</a>
+                <div class="clear-float"></div>
+            </div>
+        </div>
+    </section>
+{% endblock body %}
