@@ -1,0 +1,47 @@
+#pastors-corner-container-level-1 {
+    position: relative;
+    width: 100%;
+}
+
+#pastors-corner-container-level-2 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 15vh auto;
+    max-width: fit-content;
+    min-height: 70vh;
+    position: relative;
+}
+
+#pastors-corner-container-level-3 #slider, #text {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#pastors-corner-container-level-3 #slider {
+    background: #000000;
+    height: 515px;
+    overflow: hidden;
+    width: 435px;
+}
+
+#pastors-corner-container-level-3 #text #title {
+    color: #535252;
+    font-size: 20px;
+    line-height: 1.4em;
+    margin: 20px;
+    text-align: left;
+}
+
+#pastors-corner-container-level-3 #text #content {
+    width: 460px;
+}
+
+#pastors-corner-container-level-3 #text #content p {
+    color: #535252;
+    font-size: 13px;
+    line-height: 1.4em;
+    margin: 20px;
+    text-align: left;
+}
