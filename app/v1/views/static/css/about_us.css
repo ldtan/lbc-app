@@ -53,6 +53,7 @@
     border: 2px solid rgba(255, 255, 255, 1);
     height: 356px;
     margin: 20px;
+    object-fit: cover;
     overflow: hidden;
     width: 268px;
 }

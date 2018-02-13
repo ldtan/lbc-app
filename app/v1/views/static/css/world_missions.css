@@ -1,9 +1,9 @@
-#faith-promise-mission-container-level-1 {
+#world-missions-container-level-1 {
     position: relative;
     width: 100%;
 }
 
-#faith-promise-mission-container-level-2 {
+#world-missions-container-level-2 {
     align-items: center;
     display: flex;
     justify-content: center;
@@ -13,16 +13,16 @@
     position: relative;
 }
 
-#faith-promise-mission-container-level-3 {
+#world-missions-container-level-3 {
     text-align: center;
 }
 
-#faith-promise-mission-container-level-3 #picture, #text {
+#world-missions-container-level-3 #picture, #text {
     display: inline-block;
     vertical-align: middle;
 }
 
-#faith-promise-mission-container-level-3 #picture {
+#world-missions-container-level-3 #picture {
     background-color: rgba(255, 255, 255, 1);
     border: 2px solid rgba(255, 255, 255, 1);
     border-radius: 3px;
@@ -33,13 +33,13 @@
     width: 346px;
 }
 
-#faith-promise-mission-container-level-3 #text {
+#world-missions-container-level-3 #text {
     max-width: 525px;
     min-width: 153px;
     text-align: left;
 }
 
-#faith-promise-mission-container-level-3 #text #title {
+#world-missions-container-level-3 #text #title {
     color: #535252;
     font-size: 20px;
     font-weight: bold;
@@ -47,7 +47,7 @@
     margin: 20px;
 }
 
-#faith-promise-mission-container-level-3 #text #content p {
+#world-missions-container-level-3 #text #content p {
     color: #535252;
     font-size: 13px;
     font-weight: normal;
