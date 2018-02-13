@@ -13,9 +13,12 @@
     position: relative;
 }
 
+#pastors-corner-container-level-3 {
+    text-align: center;
+}
+
 #pastors-corner-container-level-3 #slider, #text {
     display: inline-block;
-    text-align: center;
     vertical-align: middle;
 }
 

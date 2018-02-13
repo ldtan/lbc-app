@@ -1,9 +1,9 @@
-#world-missions-container-level-1 {
+#building-project-container-level-1 {
     position: relative;
     width: 100%;
 }
 
-#world-missions-container-level-2 {
+#building-project-container-level-2 {
     align-items: center;
     display: flex;
     justify-content: center;
@@ -13,16 +13,16 @@
     position: relative;
 }
 
-#world-missions-container-level-3 {
+#building-project-container-level-3 {
     text-align: center;
 }
 
-#world-missions-container-level-3 #picture, #text {
+#building-project-container-level-3 #picture, #text {
     display: inline-block;
     vertical-align: middle;
 }
 
-#world-missions-container-level-3 #picture {
+#building-project-container-level-3 #picture {
     background-color: rgba(255, 255, 255, 1);
     border: 2px solid rgba(255, 255, 255, 1);
     border-radius: 3px;
@@ -33,14 +33,14 @@
     width: 346px;
 }
 
-#world-missions-container-level-3 #text {
+#building-project-container-level-3 #text {
     max-width: 470px;
     min-width: 346px;
     margin: 0 20px;
     text-align: left;
 }
 
-#world-missions-container-level-3 #text #title {
+#building-project-container-level-3 #text #title {
     color: #535252;
     font-size: 20px;
     font-weight: bold;
@@ -48,7 +48,7 @@
     margin: 20px 0;
 }
 
-#world-missions-container-level-3 #text #content p {
+#building-project-container-level-3 #text #content p {
     color: #535252;
     font-size: 13px;
     font-weight: normal;

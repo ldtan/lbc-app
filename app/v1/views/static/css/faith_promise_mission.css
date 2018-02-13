@@ -34,8 +34,9 @@
 }
 
 #faith-promise-mission-container-level-3 #text {
-    max-width: 525px;
-    min-width: 153px;
+    max-width: 470px;
+    min-width: 346px;
+    margin: 0 20px;
     text-align: left;
 }
 
@@ -44,7 +45,7 @@
     font-size: 20px;
     font-weight: bold;
     line-height: 1.4em;
-    margin: 20px;
+    margin: 20px 0;
 }
 
 #faith-promise-mission-container-level-3 #text #content p {
@@ -52,5 +53,5 @@
     font-size: 13px;
     font-weight: normal;
     line-height: 1.4em;
-    margin: 20px;
+    margin: 20px 0;
 }
