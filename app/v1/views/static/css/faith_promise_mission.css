@@ -1,0 +1,55 @@
+#faith-promise-mission-container-level-1 {
+    position: relative;
+    width: 100%;
+}
+
+#faith-promise-mission-container-level-2 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 15vh auto;
+    max-width: fit-content;
+    min-height: 70vh;
+    position: relative;
+}
+
+#faith-promise-mission-container-level-3 {
+    text-align: center;
+}
+
+#faith-promise-mission-container-level-3 #picture, #text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#faith-promise-mission-container-level-3 #picture {
+    background-color: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 3px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    height: 410px;
+    overflow: hidden;
+    width: 346px;
+}
+
+#faith-promise-mission-container-level-3 #text {
+    max-width: 525px;
+    min-width: 153px;
+    text-align: left;
+}
+
+#faith-promise-mission-container-level-3 #text #title {
+    color: #535252;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.4em;
+    margin: 20px;
+}
+
+#faith-promise-mission-container-level-3 #text #content p {
+    color: #535252;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.4em;
+    margin: 20px;
+}
