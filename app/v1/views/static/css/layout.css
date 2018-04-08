@@ -33,7 +33,7 @@
 #site-logo #icon {
     height: 89px;
     width: 87px;
-    object-fit: cover;
+    object-fit: contain;
     position: relative;
 }
 

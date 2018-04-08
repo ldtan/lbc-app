@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{% block title %}{% endblock title %} | La Loma Baptist Church</title>
+        <link rel="icon" href="{{ url_for('static', filename='img/lbc_icon.png') }}">
         <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/default.css') }}" />
         <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/layout.css') }}" />
         
@@ -15,8 +16,8 @@
             <header id="main-header-container">
                 <div class="translucent-filter"></div>
                 <header id="header-container">
-                    <a id='site-logo' href="#">
-                        <img id="icon" />
+                    <a id='site-logo' href="{{ url_for('home.read') }}">
+                        <img id="icon" src="{{ url_for('static', filename='img/lbc_icon.png') }}" />
                         <div id="text">
                             <h1 id="title">La Loma Baptist Church</h1>
                             <h6 id="subtitle">The Church that Preaches what the Bible Teaches</h6>
@@ -84,13 +85,13 @@
                     <div class="navigation-item">
                         <a id="title" href="#">ABOUT US</a>
                         <div id="content">
-                            <a href="#">PASTOR'S CORNER</a>
-                            <a href="#">OUR HISTORY</a>
-                            <a href="#">FAITH PROMISE MISSIONS</a>
-                            <a href="#">WORLD MISSIONS</a>
-                            <a href="#">BUILDING PROJECT</a>
-                            <a href="#">OUR SERVICES</a>
-                            <a href="#">CONTACT US</a>
+                            <a href="{{ url_for('about_us.read', page='pastors_corner') }}">PASTOR'S CORNER</a>
+                            <a href="{{ url_for('about_us.read', page='our_history') }}">OUR HISTORY</a>
+                            <a href="{{ url_for('about_us.read', page='faith_promise_mission') }}">FAITH PROMISE MISSIONS</a>
+                            <a href="{{ url_for('about_us.read', page='world_missions') }}">WORLD MISSIONS</a>
+                            <a href="{{ url_for('about_us.read', page='building_project') }}">BUILDING PROJECT</a>
+                            <a href="{{ url_for('about_us.read', page='our_services') }}">OUR SERVICES</a>
+                            <a href="{{ url_for('about_us.read', page='contact_us') }}">CONTACT US</a>
                         </div>
                     </div>
                     <div class="navigation-item">

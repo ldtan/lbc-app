@@ -2,7 +2,7 @@
 import os
 import sys
 from app import v1
-from flask import Flask, render_template, url_for
+from flask import Flask, redirect, render_template, url_for
 from werkzeug import exceptions
 # [END Imports]
 
@@ -16,6 +16,10 @@ v1.configure_blueprints(app)
 
 app.debug = True
 # [END Configurations]
+
+@app.route('/')
+def index():
+    return redirect(url_for('home.read'))
 
 # [START Error Handler]
 @app.errorhandler(404)
